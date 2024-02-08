@@ -1,45 +1,45 @@
-const getUserNames = users => {
+const getTotalBalanceByGender = (users, gender) => {
+  return 
+};
 
-    return this.name()
-}
-
-console.log(
-  getUserNames([
-  {
+const clients = [
+	{
     name: "Moore Hensley",
-    email: "moorehensley@indexia.com",
+    gender: "male",
     balance: 2811
   },
   {
     name: "Sharlene Bush",
-    email: "sharlenebush@tubesys.com",
+    gender: "female",
     balance: 3821
   },
   {
     name: "Ross Vazquez",
-    email: "rossvazquez@xinware.com",
+    gender: "male",
     balance: 3793
   },
   {
     name: "Elma Head",
-    email: "elmahead@omatom.com",
+    gender: "female",
     balance: 2278
   },
   {
     name: "Carey Barr",
-    email: "careybarr@nurali.com",
+    gender: "male",
     balance: 3951
   },
   {
     name: "Blackburn Dotson",
-    email: "blackburndotson@furnigeer.com",
+    gender: "male",
     balance: 1498
   },
   {
     name: "Sheree Anthony",
-    email: "shereeanthony@kog.com",
+    gender: "female",
     balance: 2764
-  },
-])
-); // ["Moore Hensley", "Sharlene Bush", "Ross Vazquez", "Elma Head", "Carey Barr", "Blackburn Dotson", "Sheree Anthony"]
+  }
+];
 
+console.log(getTotalBalanceByGender(clients, "male")); // 12053
+
+console.log(getTotalBalanceByGender(clients, "female")); // 8863
